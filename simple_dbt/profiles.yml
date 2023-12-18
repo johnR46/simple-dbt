@@ -1,0 +1,12 @@
+simple_dbt:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: dbt_tutorial
+      schema: dbt_tutorial
+  target: dev

@@ -1,0 +1,70 @@
+[0m11:09:24.893870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A22B81DE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A22BCE7690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A22B83EA50>]}
+
+
+============================== 11:09:24.896870 | 6b84f9f9-0063-450b-ad73-d79575f9ebe2 ==============================
+[0m11:09:24.896870 [info ] [MainThread]: Running with dbt=1.7.4
+[0m11:09:24.897870 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\amdas\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init simple_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m11:09:24.900108 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/amdas/.dbt')}
+[0m11:09:24.900108 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:09:24.901737 [debug] [MainThread]: Starter project path: H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m11:09:24.936756 [info ] [MainThread]: 
+Your new dbt project "simple_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:09:24.937746 [info ] [MainThread]: Setting up your profile.
+[0m11:09:31.088285 [error] [MainThread]: Encountered an error:
+
+[0m11:09:31.090289 [error] [MainThread]: Traceback (most recent call last):
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\dbt\task\init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\dbt\task\init.py", line 244, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "H:\john\VscodeProject\simple_dbt\dbt-env\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:09:31.092288 [debug] [MainThread]: Command `dbt init` failed at 11:09:31.092288 after 6.21 seconds
+[0m11:09:31.093285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A22B90C3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A22B850A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A22B81D610>]}
+[0m11:09:31.093285 [debug] [MainThread]: Flushing usage events
+[0m11:18:19.252906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028863B26310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028863E0F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028863A83750>]}
+
+
+============================== 11:18:19.256283 | 1472aba3-ba43-4883-8115-5b569431b778 ==============================
+[0m11:18:19.256283 [info ] [MainThread]: Running with dbt=1.7.4
+[0m11:18:19.257283 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\amdas\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed --profile simple_dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:18:19.257283 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path H:\john\VscodeProject\simple_dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:18:19.259282 [debug] [MainThread]: Command `dbt seed` failed at 11:18:19.258284 after 0.01 seconds
+[0m11:18:19.259282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028863D2C650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028863D2DDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028863D2F710>]}
+[0m11:18:19.259282 [debug] [MainThread]: Flushing usage events
